@@ -1,6 +1,4 @@
 <?php
-
-use App\Http\Controllers\AfficherControlleur;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,4 +21,15 @@ Route::get('/affichage', function () {
 Route::get('/formulaire', function () {
     return view('formulaire');
 });
-Route::get('/formulaireControlleur', [AfficherControlleur::class, 'AfficherInfo']);	//[Contrôleur::class, 'méthode’]
+Route::get('/formulaireEnvoie', function () {
+    $name = request("name");
+    $prenom = request("prenom");
+    $age = request("age");
+    $courriel = request("courriel");
+    return view('affichage',[
+        "infoNom" => $name,
+        "infoPrenom" => $prenom,
+        "infoAge" => $age,
+        "infoCourriel" => $courriel
+    ]);
+});
