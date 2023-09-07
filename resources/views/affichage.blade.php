@@ -1,5 +1,6 @@
 <h1>
-    {{$infoNom . " " . $infoPrenom}}
-    Age : {{$infoAge}}
-    courriel : {{$infoCourriel}}
+    {{ $infoPrenom }} {{ $infoNom }}
+    Age : {{ $infoAge }}
+    Courriel : {{ $infoCourriel }}
 </h1>
+

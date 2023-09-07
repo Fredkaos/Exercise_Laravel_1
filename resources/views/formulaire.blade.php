@@ -7,7 +7,7 @@
 </head>
 <body>
 <h2>Formulaire PHP</h2>
-<form method="post" action="">
+<form method="get" action="/formulaireControlleur">
     <label for="nom">Nom :</label>
     <input type="text" name="nom" id="nom" required><br><br>
 

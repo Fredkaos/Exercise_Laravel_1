@@ -13,7 +13,6 @@
     <ul>
         <li><a href="/">Acceuil</a></li>
         <li><a href="/formulaire">Formulaire</a></li>
-        <li><a href="/affichage">Affichage</a></li>
     </ul>
 </nav>
 <footer>
